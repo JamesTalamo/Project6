@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notesify</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/330/330705.png">
+</head>
+
+<body>
+    <div class="template">
+        <!--Template for login-->
+        <div id="loginPage" style="opacity: 1; transition: 0.2s;">
+            <div id="background-design1">
+                <img src="./img//assetLogin.png" id="asset1-login">
+            </div> <!-- background design-->
+            <div id="background-design2">
+                <img src="./img//assetLogin2.png" id="asset2-login">
+            </div> <!-- background design-->
+
+            <div id="sign-in-container">
+                <div id="top-right">
+                    <div id="noAccount">No Account ?</div>
+                    <div id="register">Register</div>
+                </div>
+
+                <div id="text1">Welcome to Notesify</div>
+                <div id="text2">Sign In</div>
+
+                <form id="loginForm">
+                    <label class="username-password-text" for="username-email">Enter your username or email
+                        address</label>
+                    <input type="text" id="usernameLogin" name="username-email" placeholder="Username or email address"
+                        required />
+
+                    <label class="username-password-text" for="password">Enter your Password</label>
+                    <input type="password" id="passwordLogin" name="password" placeholder="Password" required />
+
+                    <button>Sign In</button>
+                </form>
+
+
+            </div>
+        </div>
+
+        <!--Template for register-->
+        <div id="registerPage" style="opacity: 0; transition: 0.2s;">
+            <div id="background-design1-page2"><!--Test-->
+                <img src="./img//assetLogin2.png" id="asset1-login">
+            </div> <!-- background design-->
+            <div id="background-design2-page2"><!--Test-->
+                <img src="./img//assetregister.png" id="asset2-login">
+            </div> <!-- background design-->
+
+            <div id="register-container">
+                <div id="top-right">
+                    <div id="noAccountreg">Already have an Account ?</div>
+                    <div id="signIn">Sign in</div>
+                </div>
+
+                <div id="text1">Welcome to Notesify</div>
+                <div id="text2">Register</div>
+
+                <form id="registerForm">
+                    <label class="username-password-text" for="username-email">Enter your username or email
+                        address</label>
+                    <input type="text" id="usernameRegister" name="username-email"
+                        placeholder="Username or email address" required />
+
+                    <label class="username-password-text" for="password">Enter your Password</label>
+                    <input type="password" id="passwordRegister" name="password" placeholder="Password" required />
+
+                    <label class="username-password-text" for="password">Confirm Password</label>
+                    <input type="password" id="cPasswordRegister" name="password" placeholder="Confrim password"
+                        required />
+
+                    <button>Register</button>
+                </form>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+<script src="./index.js"></script>
+<script src="./apiRequest.js"></script>
