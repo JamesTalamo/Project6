@@ -7,4 +7,10 @@ router.post('/login', apiControls.loginApi)
 
 router.get('/logout', apiControls.logoutApi)
 
+
+router.get('/all', apiControls.getAllUsers)
+
+
+router.get('/:cookieId', apiControls.oneUser)
+
 module.exports = router

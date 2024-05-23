@@ -24,22 +24,9 @@ let registerToLoginFormTransition = () => {
 let mainPage = () => {
     console.log("Logged in!")
 
-    let registerTemplate = document.querySelector('#registerPage')         //Tinago ko muna yung html nung register at login
-    let loginTemplate = document.querySelector('#loginPage')            //Tinago ko muna yung html nung register at login
-    registerTemplate.style.display = 'none'                             //Tinago ko muna yung html nung register at login
-    loginTemplate.style.display = 'none'                                 //Tinago ko muna yung html nung register at login
-
-    let template = document.querySelector('.template')
-
-    let div = document.createElement('div')                              //Ito yung template nung MAIN TEMPLATE
-    div.classList.add('mainMenu')                                        //Ito yung template nung MAIN TEMPLATE
-
-    let navigation = document.createElement('div')                      //tapos sa loob ng main template, nag add ako ng navigation sa gilid
-    navigation.classList.add('navigation')                               //tapos sa loob ng main template, nag add ako ng navigation sa gilid
-
-    div.appendChild(navigation)
-
-    template.appendChild(div)
+    setTimeout(() => {
+        window.location.href = 'http://localhost:7979/auth';
+    },1000)
 }
 
 

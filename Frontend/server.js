@@ -9,7 +9,12 @@ app.use(cors())
 
 app.use(express.json())
 app.use(express.static('public'))
+app.use(express.static('routesJS'))
 
+
+app.use('/auth', (req,res) => {
+    res.sendFile(path.join(__dirname,'authRoutes','dashboard.html'))
+})
 
 app.use('/', (req, res) => {
     res.sendFile(path.join(__dirname,'static','index.html'))
