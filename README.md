@@ -1,0 +1,3 @@
+DATABASE_URI="mongodb+srv://jamestalamo4:jp80910189@cluster0.7ti0nd3.mongodb.net/Project6?retryWrites=true&w=majority&appName=Cluster0"
+
+COOKIE_ID = "ab14e93e404bd0902b9399ab6b74378a94148d5caab0a5c9cad8972d90078f210187d69ca624befcaf2fcd118ee04a7b2217aabf57a946b6352b8c91ff36a26f"
