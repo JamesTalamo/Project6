@@ -4,7 +4,8 @@ let auth = cookie.split(' ')
 let index = auth.findIndex(iteration => iteration.includes('cookieId'))
 let cookieCheck = auth[index].split('=')[1]
 
-console.log(cookieCheck)
+
+let userInfo
 
 let fetchData = async () => {
     let URL = `http://localhost:6969/api/${cookieCheck}`
@@ -16,10 +17,13 @@ let fetchData = async () => {
             throw new Error(errorMes.message)
         }
         let data = await res.json()
-        console.log(data)
+        userInfo = data
     } catch (error) {
         console.log(error)
     }
 }
-
 fetchData()
+
+setTimeout(() => {
+    console.log(userInfo)
+},1000)

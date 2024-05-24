@@ -24,9 +24,9 @@ let registerToLoginFormTransition = () => {
 let mainPage = () => {
     console.log("Logged in!")
 
-    setTimeout(() => {
-        window.location.href = 'http://localhost:7979/auth';
-    },1000)
+
+    window.location.href = 'http://localhost:7979/auth';
+
 }
 
 
@@ -116,7 +116,6 @@ loginForm.addEventListener('submit', (e) => {
             }
 
             let data = await res.json()
-            console.log(data)
 
             mainPage()
 
