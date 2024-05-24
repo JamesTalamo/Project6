@@ -67,7 +67,8 @@ const loginApi = async (req, res) => {
 
 let logoutApi = async (req, res) => {
     const cookieId = req.cookies.cookieId
-    if (!cookieId) return res.status(400).json({ "error": "there's no cookieId in your cookies!" })
+    
+    if (!cookieId) return res.status(401).json({ "error": "there's no cookieId in your cookies!" })
 
     try {
         let ifExist = await User.findOne({ cookieId: cookieId })

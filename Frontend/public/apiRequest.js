@@ -104,7 +104,7 @@ loginForm.addEventListener('submit', (e) => {
                 'content-type': 'application/json',
             },
             body: JSON.stringify(obj),
-            credentials: 'include'
+            credentials: 'include' // This is important to include cookies
         })
 
         try {
