@@ -25,7 +25,9 @@ let fetchData = async () => {
 fetchData()
 
 setTimeout(() => {
-    console.log(userInfo)
+    let infoName = document.querySelector('#infoName')
+    infoName.innerText = userInfo.success.username
+
 }, 1000)
 
 //Logout 
