@@ -28,4 +28,4 @@ app.use(cors({
 app.use('/api', require('./Routes/Routes'))
 
 const PORT = process.env.PORT || 6969
-app.listen(PORT, () => console.log(`Connected to PORT ${PORT}`))
+app.listen(PORT, () => console.log(`Connected to PORT ${PORT} Backend`))

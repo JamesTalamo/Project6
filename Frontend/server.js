@@ -21,4 +21,4 @@ app.use('/', (req, res) => {
 })
 
 const PORT = process.env.PORT || 7979
-app.listen(PORT, () => console.log(`Listening to PORT ${PORT}`))
+app.listen(PORT, () => console.log(`Listening to PORT ${PORT} Frontend`))
