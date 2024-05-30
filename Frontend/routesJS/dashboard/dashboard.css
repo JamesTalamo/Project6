@@ -67,7 +67,7 @@ body {
 
     padding-top: 20px;
 
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .navBtn {
@@ -101,7 +101,7 @@ body {
 
 
 /*  main teemplates for the buttons template*/
-.btn-main-template{
+.btn-main-template {
     width: 85%;
     height: 90%;
     background-color: transparent;
@@ -113,7 +113,7 @@ body {
 
 /* FOR HOME DASHBOARD --------------------------------------------------------------------------------------*/
 
-#homeDashboard{
+#homeDashboard {
     background-color: yellow;
 }
 
@@ -123,28 +123,30 @@ body {
 /* FOR REGISTERED USER DASHBOARD---------------------------------------------------------------------------------*/
 
 
-#registerUserDashboard{
+#registerUserDashboard {
     background-color: red;
+    
+
 }
 
 /*FOR INFO DASHBOARD------------------------------------------------------------------------------------------------------*/
 
 #infoDashboard {
-    
-    background-color: lightblue;
-   
 
-   
+    background-color: lightblue;
+
+
+
 }
 
-.dash-names{
+.dash-names {
     font-size: 24px;
     color: #FF8901;
 
     font-weight: 600;
 }
 
-.black{
+.black {
     font-size: 24px;
     display: inline;
 
