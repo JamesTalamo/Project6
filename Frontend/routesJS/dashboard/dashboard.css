@@ -106,36 +106,163 @@ body {
     height: 90%;
     background-color: transparent;
     margin-left: 10vw;
+
+    position: relative;
+
+    box-shadow: 0px 0px 45px -16px rgba(92, 92, 92, 1);
 }
 
 
 
 
-/* FOR HOME DASHBOARD --------------------------------------------------------------------------------------*/
+/* FOR HOME  --------------------------------------------------------------------------------------*/
 
 #homeDashboard {
-    background-color: yellow;
+    background-color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-container {
+    width: 95%;
+    height: 90%;
+
+    background-color: white;
+
+    border-radius: 15px;
+
 }
 
 
 
 
-/* FOR REGISTERED USER DASHBOARD---------------------------------------------------------------------------------*/
+
+
+/* FOR REGISTERED USER ---------------------------------------------------------------------------------*/
 
 
 #registerUserDashboard {
-    background-color: red;
-    
+
+    background-color: white;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+}
+
+#regUser-container {
+    width: 95%;
+    height: 80%;
+
+
+
+
+    overflow: hidden;
+
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#top-area {
+    width: 100%;
+    height: 100px;
+
+    background-color: #F8F8F8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-area-text {
+    width: 250px;
+    /*TANDAAN mo width neto*/
+    height: 90%;
+
+    background-color: transparent;
+
+    font-weight: 500;
+
+    color: #8E95A9;
+
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-area {
+    width: 100%;
+    height: 90%;
+
+    background-color: #CDD1DE;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    gap: 0.1rem;
+
+    overflow-y: auto;
 
 }
 
-/*FOR INFO DASHBOARD------------------------------------------------------------------------------------------------------*/
+.box-regUser {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-regUser-inside {
+    width: 250px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+
+/*FOR INFO ------------------------------------------------------------------------------------------------------*/
 
 #infoDashboard {
 
-    background-color: lightblue;
+    background-color: white;
 
+    border-radius: 15px;
 
+}
+
+#info-container {
+    width: 95%;
+    height: 67%;
+
+    background-color: white;
+
+    border-radius: 15px;
 
 }
 

@@ -14,6 +14,10 @@ const userSchema = new Schema({
         type: String,
         default: ""
     },
+    status: {
+        type : String,
+        default : "offline"
+    },
     createdAt: {
         type: Date,
         default: Date.now

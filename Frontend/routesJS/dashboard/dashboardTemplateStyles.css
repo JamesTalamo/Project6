@@ -1,7 +1,19 @@
 /* Mga styles dito is for the INFO area TEMPLATE lang */
 
+
+
+/* STYLES NG REGISTERED USERS */
+
+.reg-users-text{
+    color:black;
+    font-size: 24px;
+}
+
+
+/* STYLES NG INFO */
 .customerText{
     font-size: 24px;
+    color:black;
 }
 .customerTextName {
     font-weight: 500;

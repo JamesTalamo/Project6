@@ -4,7 +4,6 @@ const User = require('../Model/Users')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
 
-
 const registerApi = async (req, res) => {
     let { user, pass } = req.body
     if (!user || !pass) return res.status(400).json({ "error": "user and pass are required" })
@@ -27,8 +26,6 @@ const registerApi = async (req, res) => {
     }
 }
 
-
-
 const loginApi = async (req, res) => {
     let { user, pass } = req.body
     if (!user || !pass) return res.status(400).json({ "error": "user and pass are required" })
@@ -49,6 +46,7 @@ const loginApi = async (req, res) => {
                 { expiresIn: '1d' }
             )
 
+            ifExist.status = 'online'
             ifExist.cookieId = cookieId
             await ifExist.save() // para ma save
 
@@ -72,6 +70,7 @@ let logoutApi = async (req, res) => {
 
     try {
         let ifExist = await User.findOne({ cookieId: cookieId })
+        ifExist.status = 'offline'
         ifExist.cookieId = ''
         await ifExist.save()
 
@@ -101,11 +100,12 @@ let oneUser = async (req, res) => {
     }
 }
 
+
+
 module.exports = {
     registerApi,
     loginApi,
     logoutApi,
     getAllUsers,
-
     oneUser
 }
