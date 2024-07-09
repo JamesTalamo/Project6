@@ -36,3 +36,5 @@ signin.addEventListener('click', (e) => {
         loginPage.style.opacity = '1'
     }, 200)
 })
+
+//After mag login I sesetup na sa screen yung Dashboard

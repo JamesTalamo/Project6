@@ -20,10 +20,16 @@ app.use(cookieParser())
 dbConnect() // middleware para mag connect sa mongodb
 
 app.use(express.json())
+
+const allowedOrigins = [
+    'http://localhost:7979',
+    'https://notesifytalamo.onrender.com'
+];
+
 app.use(cors({
-    origin: 'http://localhost:7979',
+    origin: allowedOrigins,
     credentials: true
-}))
+}));
 
 app.use('/api', require('./Routes/Routes'))
 app.use('/postRoutes', require('./Routes/PostRoutes'))

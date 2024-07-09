@@ -24,8 +24,8 @@ let registerToLoginFormTransition = () => {
 let mainPage = () => {
     console.log("Logged in!")
 
-
-    window.location.href = 'http://localhost:7979/auth';
+    window.location.href = './auth';
+    // window.location.href = 'https://notesifyfrontend.onrender.com/auth'
 
 }
 
@@ -117,7 +117,9 @@ loginForm.addEventListener('submit', (e) => {
 
             let data = await res.json()
 
-            mainPage()
+            setTimeout(() => {
+                mainPage()
+            }, 5000);
 
         } catch (error) {
             alert(error.message)

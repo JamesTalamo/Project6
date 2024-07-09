@@ -1,9 +1,10 @@
-let cookie = document.cookie
+let cookie = document.cookie 
+
 let auth = cookie.split(' ')
+console.log(cookie)
 
 let index = auth.findIndex(iteration => iteration.includes('cookieId'))
 let cookieCheck = auth[index].split('=')[1]
-
 
 let userInfo
 
@@ -34,6 +35,7 @@ setTimeout(() => {
 let logout = document.querySelector('#logout')
 
 logout.addEventListener('click', (e) => {
+    console.log('press logout')
     e.preventDefault();
 
     let fetchLogout = async () => {
@@ -206,7 +208,8 @@ logout.addEventListener('click', (e) => {
                 form.appendChild(button)
 
                 form.addEventListener('keydown', function (e) {
-                    if (e.key === 'Enter' && !e.shiftKey) {
+                    console.log(e.key)
+                    if (e.key === 'enter' && !e.shiftKey) {
                         if (textArea.value.trim().length === 0) {
                             e.preventDefault();  // Prevent default behavior (adding a newline)
                             alert('Please input something inside');
